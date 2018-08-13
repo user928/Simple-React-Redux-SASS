@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect, Provider } from 'react-redux';
 import store from '../Redux/store';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 import SVGIcon from './SVGIcon/SVGIcon';
-import Controlls from "./Controls";
+import Controlls from './Controls';
 
 export class _Counter extends React.Component {
 	static propTypes = {
@@ -19,12 +19,12 @@ export class _Counter extends React.Component {
 
 		return (
 			<div className="counter">
-				<div className='count'>{count}</div>
-				<Controlls/>
-				<hr/>
+				<div className="count">{count}</div>
+				<Controlls />
+				<hr />
 
 				<span>
-					<SVGIcon icon="wrench" wrapperClassName="AppLanding__icon" size={80}/>
+					<SVGIcon icon="wrench" wrapperClassName="AppLanding__icon" size={80} />
 					<a href="https://github.com/Gigacore/React-Redux-Starter">Fork it on Github</a>
 				</span>
 			</div>
@@ -34,7 +34,7 @@ export class _Counter extends React.Component {
 
 export const mapStateToProps = store => {
 	return {
-		count: store.count
+		count: store.count,
 	};
 };
 

@@ -7,7 +7,7 @@ export default function reducer(state = 0, action) {
 		case actionTypes.DECREMENT_NUM:
 			return state - 1;
 		case actionTypes.RESET_NUM:
-			return state = 0;
+			return (state = 0);
 		default:
 			return state;
 	}
