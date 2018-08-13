@@ -1,0 +1,12 @@
+//Base styles shared across whole app
+@import "./base/variables.scss";
+
+//Shared across whole app
+
+//Component specific styles
+@import 'components/counter.scss';
+
+//Helper classes that overwrite all other css
+@import "helpers/animations.scss";
+@import "helpers/margins.scss";
+@import "helpers/paddings.scss";
